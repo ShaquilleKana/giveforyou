@@ -19,7 +19,7 @@ export default function Navbar() {
           ☰
         </button>
 
-        <nav className={`nav-links ${isOpen ? "active" : ""} md:flex md:flex-row md:items-center`}>
+        <nav className={`nav-links ${isOpen ? "active" : ""} md:flex md:flex-row md:items-center text-white`}>
           <Link href="/home" className="nav-link p-4">
             Home
           </Link>

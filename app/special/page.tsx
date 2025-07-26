@@ -42,7 +42,7 @@ export default function SpecialPage() {
           />
         </div>
       </div>
-      <footer className="text-center text-lg p-4" style={{ fontFamily: "Pacifico, cursive" }}>
+      <footer className="text-center text-white text-lg p-4" style={{ fontFamily: "Pacifico, cursive" }}>
         <h1>Klik Playlist di Kanan Atas yaaa</h1>
       </footer>
 
