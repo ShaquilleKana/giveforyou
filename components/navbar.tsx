@@ -31,7 +31,7 @@ export default function Navbar() {
           </Link>
         </nav>
 
-        <div className="logo text-white font-bold text-7xl" style={{ fontFamily: "Pacifico, cursive" }}>
+        <div className="logo text-white font-bold text-3xl md:text-6xl transition-all duration-300" style={{ fontFamily: "Pacifico, cursive" }}>
           <h1>Happy Birth Day</h1>
         </div>
       </header>

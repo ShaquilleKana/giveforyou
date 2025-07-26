@@ -10,7 +10,24 @@ export default function HomePage() {
   useEffect(() => {
     // Auto-play background music
     if (audioRef.current) {
-      audioRef.current.play().catch(console.error)
+      const audio = audioRef.current
+      audio.volume = 0.3 // Mulai dari volume 0
+
+      audio
+        .play()
+        .then(() => {
+          // Fade-in volume setelah berhasil play
+          let volume = 0
+          const fadeInterval = setInterval(() => {
+            if (volume < 0.5) {
+              volume += 0.02
+              audio.volume = Math.min(volume, 1)
+            } else {
+              clearInterval(fadeInterval)
+            }
+          }, 200) // Tambah setiap 200ms
+        })
+        .catch(console.error)
     }
   }, [])
 
@@ -18,7 +35,7 @@ export default function HomePage() {
     <div style={{ backgroundColor: "rgb(177, 134, 141)", minHeight: "100vh", color: "#ffffff" }}>
       <Navbar />
 
-      <audio ref={audioRef} controls className="fixed top-20 left-4 z-50">
+      <audio ref={audioRef} controls className="hidden fixed top-20 left-4 z-50">
         <source src="/music/sound.mp3" type="audio/mp3" />
         Your browser does not support the audio element.
       </audio>

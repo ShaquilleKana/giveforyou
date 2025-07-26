@@ -2,95 +2,55 @@ import Flower from "@/components/flower"
 
 export default function MyWishPage() {
   return (
-    <div
-      style={{
-        backgroundColor: "rgb(177, 134, 141)",
-        minHeight: "100vh",
-        color: "#ffffff",
-        display: "block",
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
-      {/* Flower arrangements */}
-      <div className="circle-container-top flex justify-center items-center relative rounded-full transform translate-y-[10%]">
-        <div className="love flex mr-60">
-          <Flower />
-          <Flower />
-        </div>
-        <Flower />
-      </div>
-
-      <div className="circle-container flex justify-center items-center relative rounded-full transform -translate-y-1/2">
-        <div className="love1 flex mr-30">
-          <Flower />
-          <Flower />
-        </div>
-        <Flower />
-        <Flower />
-      </div>
-
-      <div className="circle-container flex justify-center items-center relative rounded-full transform -translate-y-1/2">
-        <Flower />
-        <Flower />
-        <Flower />
-        <Flower />
-        <Flower />
-        <Flower />
-        <Flower />
-      </div>
-
-      <div className="circle-container1 flex justify-center items-center relative rounded-full transform -translate-y-1/2">
-        <Flower />
-        <Flower />
-        <Flower />
-        <Flower />
-        <Flower />
-        <Flower />
-        <Flower />
-        <Flower />
-        <Flower />
-      </div>
-
-      <div className="circle-container2 flex justify-center items-center relative rounded-full transform -translate-y-1/2">
-        <Flower />
-        <Flower />
-        <Flower />
-        <Flower />
-        <Flower />
-        <Flower />
-        <Flower />
-        <Flower />
-        <Flower />
-      </div>
-
-      <div className="circle-container3 flex justify-center items-center relative rounded-full transform -translate-y-1/2">
-        <Flower />
-        <Flower />
-        <Flower />
-        <Flower />
-        <Flower />
-        <Flower />
-        <Flower />
-      </div>
-
-      <div className="circle-container3 flex justify-center items-center relative rounded-full transform -translate-y-1/2">
-        <Flower />
-        <Flower />
-        <Flower />
-        <Flower />
-        <Flower />
-      </div>
-
-      <div className="circle-container3 flex justify-center items-center relative rounded-full transform -translate-y-1/2">
-        <Flower />
-        <Flower />
-        <Flower />
-      </div>
-
-      <div className="circle-container3 flex justify-center items-center relative rounded-full transform -translate-y-1/2">
-        <Flower />
-      </div>
-    </div>
+      <div className="bg-[#b1868d] py-[90px] xl:py-[70px] xl:px-[300px] min-h-screen text-white grid grid-cols-9 grid-rows-9 gap-0 m-0">
+        <div className="col-start-4 row-start-1"><Flower /></div>
+        <div className="col-start-6 row-start-1"><Flower /></div>
+        <div className="col-start-3 row-start-2"><Flower /></div>
+        <div className="col-start-4 row-start-2"><Flower /></div>
+        <div className="col-start-5 row-start-2"><Flower /></div>
+        <div className="col-start-6 row-start-2"><Flower /></div>
+        <div className="col-start-7 row-start-2"><Flower /></div>
+        <div className="col-start-2 row-start-3"><Flower /></div>
+        <div className="col-start-3 row-start-3"><Flower /></div>
+        <div className="col-start-4 row-start-3"><Flower /></div>
+        <div className="col-start-5 row-start-3"><Flower /></div>
+        <div className="col-start-6 row-start-3"><Flower /></div>
+        <div className="col-start-7 row-start-3"><Flower /></div>
+        <div className="col-start-8 row-start-3"><Flower /></div>
+        <div className="row-start-4"><Flower /></div>
+        <div className="row-start-4"><Flower /></div>
+        <div className="row-start-4"><Flower /></div>
+        <div className="row-start-4"><Flower /></div>
+        <div className="row-start-4"><Flower /></div>
+        <div className="row-start-4"><Flower /></div>
+        <div className="row-start-4"><Flower /></div>
+        <div className="row-start-4"><Flower /></div>
+        <div className="row-start-4"><Flower /></div>
+        <div className="row-start-5"><Flower /></div>
+        <div className="row-start-5"><Flower /></div>
+        <div className="row-start-5"><Flower /></div>
+        <div className="row-start-5"><Flower /></div>
+        <div className="row-start-5"><Flower /></div>
+        <div className="row-start-5"><Flower /></div>
+        <div className="row-start-5"><Flower /></div>
+        <div className="row-start-5"><Flower /></div>
+        <div className="row-start-5"><Flower /></div>
+        <div className="col-start-2 row-start-6"><Flower /></div>
+        <div className="col-start-3 row-start-6"><Flower /></div>
+        <div className="col-start-4 row-start-6"><Flower /></div>
+        <div className="col-start-5 row-start-6"><Flower /></div>
+        <div className="col-start-6 row-start-6"><Flower /></div>
+        <div className="col-start-7 row-start-6"><Flower /></div>
+        <div className="col-start-8 row-start-6"><Flower /></div>
+        <div className="col-start-3 row-start-7"><Flower /></div>
+        <div className="col-start-4 row-start-7"><Flower /></div>
+        <div className="col-start-5 row-start-7"><Flower /></div>
+        <div className="col-start-6 row-start-7"><Flower /></div>
+        <div className="col-start-7 row-start-7"><Flower /></div>
+        <div className="col-start-4 row-start-8"><Flower /></div>
+        <div className="col-start-5 row-start-8"><Flower /></div>
+        <div className="col-start-6 row-start-8"><Flower /></div>
+        <div className="col-start-5 row-start-9"><Flower /></div>
+    </div>    
   )
 }

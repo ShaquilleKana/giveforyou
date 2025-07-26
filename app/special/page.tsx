@@ -31,27 +31,20 @@ export default function SpecialPage() {
       style={{ backgroundColor: "rgb(177, 134, 141)", minHeight: "100vh", display: "flex", flexDirection: "column" }}
     >
       <Navbar />
-
-      <div className="video-container w-full max-w-4xl mx-auto p-8 md:p-20 flex-1 flex items-center">
+      
+      <div className="video-container w-full max-w-4xl mx-auto p-8 md:p-20 flex-1 flex flex-row items-center justify-center">
         <div className="video-wrapper relative w-full pb-[56.25%] h-0 rounded-lg overflow-hidden">
           <iframe
-            src="https://drive.google.com/file/d/1sUDrTvM2sC5lDTxGN7zRhB7_NSm5_we-/preview"
-            allow="autoplay"
+            src="https://www.youtube.com/embed/videoseries?list=PLZA14XdnBA0l1eGhp9GBXyGkTZPNLc9Iu"
+            allow="autoplay; encrypted-media"
             allowFullScreen
             className="absolute top-0 left-0 w-full h-full border-0 rounded-lg"
           />
         </div>
       </div>
-      <div className="video-container w-full max-w-4xl mx-auto p-8 md:p-20 flex-1 flex items-center">
-        <div className="video-wrapper relative w-full pb-[56.25%] h-0 rounded-lg overflow-hidden">
-          <iframe
-            src="https://drive.google.com/file/d/1sUDrTvM2sC5lDTxGN7zRhB7_NSm5_we-/preview"
-            allow="autoplay"
-            allowFullScreen
-            className="absolute top-0 left-0 w-full h-full border-0 rounded-lg"
-          />
-        </div>
-      </div>
+      <footer className="text-center text-lg p-4" style={{ fontFamily: "Pacifico, cursive" }}>
+        <h1>Klik Playlist di Kanan Atas yaaa</h1>
+      </footer>
 
       <style jsx>{`
         @keyframes float {
